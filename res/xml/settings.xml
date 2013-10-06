@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_quiz_settings" >
+                
+        <EditTextPreference 
+            	android:title="@string/number_of_question" 
+            	android:summary="@string/pref_num_questions_summary"
+            	android:inputType="number" 
+            	android:key="numOfQuestion" android:defaultValue="10"/>
+       
+        <ListPreference
+            android:key="prefcategory"
+            android:entries="@array/selectCategory"
+            android:summary="@string/pref_category_summary" 
+            android:entryValues="@array/selectCategoryValues"
+            android:title="@string/pref_category"
+            android:defaultValue="all" />
+        
+        <EditTextPreference 
+            	android:title="@string/timer" 
+            	android:summary="@string/timer_summary"
+            	android:inputType="number" 
+            	android:key="timer" android:defaultValue="coming soon"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

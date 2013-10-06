@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/report_question"
+        android:orderInCategory="1"
+        android:showAsAction="never" />
+    <item android:id="@+id/share_fb"
+        android:title="@string/share_fb"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+</menu>

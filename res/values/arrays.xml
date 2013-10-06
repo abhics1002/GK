@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="selectCategory">
+        <item name="general">General ALL Category</item>
+        <item name="politics">Politics</item>
+        <item name="economics">Economics</item>
+        <item name="science">Science</item>
+        <item name="geography">Geography</item>
+        <item name="history">History</item>
+    </string-array>
+	<string-array name="selectCategoryValues">
+        <item name="general">all</item>
+        <item name="politics">pol</item>
+        <item name="economics">eco</item>
+        <item name="science">sci</item>
+        <item name="geography">geo</item>
+        <item name="history">his</item>
+    </string-array>
+	
+</resources>
