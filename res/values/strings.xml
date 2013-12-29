@@ -13,9 +13,11 @@
     <string name="category_button_text">Settings</string>
     <string name="title_activity_quizoptions">Quiz Setting</string>
     <string name="viewscore_alert_box_title">Are you Sure ?</string>
-    <string name="viewscore_alert_box_msg">this will close the APP ? </string>
+    <string name="viewscore_alert_box_msg">This will move the Application in background ? </string>
+    <string name="test_question_alert_box_msg">Do you want to close this quiz, you are doing great so far ? </string>
     <string name="alert_negative_button">Cancel</string>
     <string name="alert_positive_button">Okay</string>
+    <string name="exit_alert_positive_button">Exit</string>
     <string name="title_activity_quiz_setting">Quiz Settings</string>
     <string name="title_activity_quiz_settings">Quiz Settings</string>
 	<string name="share_answers">Share Quiz Answers</string>
@@ -29,4 +31,7 @@
 	<string name="go_main_menu">Main Menu</string>
 	<string name="see_answers_text">See Answers</string>
 	<string name="share_fb">Share With Friends</string>
+	<string name="image">answer-image</string>
+	<string name="prefsyncquestions">Select category of questions you wish to sync from server</string>
+	<string name="pref_sync_questions_title">Sync latest General Knowledge Questions</string>
 </resources>

@@ -1,12 +1,10 @@
 package com.abhi.gk;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -26,9 +24,6 @@ public class ViewScore extends Activity {
         setContentView(R.layout.activity_view_score);
         
         score_display = (TextView) findViewById(R.id.scoretextView);
-//        share_FB = (TextView) findViewById(R.id.fbsharetextView);
-//        see_answer = (TextView) findViewById(R.id.seeanswertextView);
-//        replay = (TextView) findViewById(R.id.replaytextView);
         Bundle bundle_obj = getIntent().getExtras();
         score = bundle_obj.getInt("score");
         
@@ -65,7 +60,7 @@ public class ViewScore extends Activity {
 			// TODO Auto-generated method stub
 			Intent sharingIntent = new Intent(Intent.ACTION_SEND);
 			sharingIntent.setType("text/plain");
-			sharingIntent.putExtra(Intent.EXTRA_TEXT, "http://www.google.fr/");
+			sharingIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.abhi.gk");
 			startActivity(Intent.createChooser(sharingIntent,"Share using"));
 			
 		}
@@ -90,6 +85,7 @@ public class ViewScore extends Activity {
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 				//finish();
+			
 				moveTaskToBack(true);
 			}
 			
@@ -112,6 +108,8 @@ public class ViewScore extends Activity {
 			
 			Intent seeAnswer = new Intent(ViewScore.this, ViewAnswers.class);
 			seeAnswer.putExtra("question_answers", question_answers);
+			seeAnswer.putExtra("no_of_question", no_of_question);
+			
 			startActivity(seeAnswer);
 		}
 	};
